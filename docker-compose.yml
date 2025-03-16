@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  kickny-bot:
+    build: .
+    container_name: kickny-bot
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./.env:/app/.env
+    environment:
+      - TZ=Europe/Moscow
