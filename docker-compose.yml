@@ -5,7 +5,7 @@ services:
     container_name: kickny-bot
     restart: unless-stopped
     ports:
-      - "${API_HOST}:${API_PORT}:${API_PORT}"
+      - "${API_PORT}:${API_PORT}"
     volumes:
       - ./.env:/app/.env
     environment:
