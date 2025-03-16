@@ -1,1 +1,1 @@
-python kicknybot.py
+python .\main.py
