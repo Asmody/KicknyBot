@@ -1,5 +1,13 @@
-FROM python:3.10-slim
+FROM python:3-slim
 
+ARG API_HOST
+ARG API_PORT
+
+# Установка переменных окружения
+ENV API_HOST=${API_HOST}
+ENV API_PORT=${API_PORT}
+
+# Установка рабочей директории
 WORKDIR /app
 
 # Установка зависимостей
